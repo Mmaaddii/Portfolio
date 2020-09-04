@@ -1,5 +1,5 @@
 body {
-	color: red;
+	/*color: red;*/
 	padding-top: 98px;
 	height: 2300px;
 }
@@ -20,3 +20,6 @@ h1,h2,h3,h4,h5 {
 .carousel-caption {
 	bottom: 80px;
 }
+
+
+/*Start Articles*/
