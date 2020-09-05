@@ -26,5 +26,5 @@ function toTop() {
 		  behavior: 'smooth'
 		});
 
-		// $(window).scrollTop(0);
+		$(window).scrollTop(0);
 }
