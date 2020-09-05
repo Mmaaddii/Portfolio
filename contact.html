@@ -72,18 +72,19 @@
       <section class="contact py-5">
         <div class="container">
           <h2 class="mb-5 h1 text-center">Contact Me</h2>
-          <form name="contactBithook" method="POST" data-netlify="true">
+
+          <form name="contact" method="POST" netlify>
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <label for="email">Email</label>
+              <input class="form-control" type="text" name="email" placeholder="email" id="email">
             </div>
             <div class="form-group">
-              <label for="exampleTextarea">Message</label>
-              <textarea name="message" class="form-control" id="exampleTextarea" placeholder="Message"></textarea>
+              <label for="message">Message</label>
+              <textarea class="form-control" type="text" name="message" placeholder="message" id="message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
+
         </div>
       </section>
 
