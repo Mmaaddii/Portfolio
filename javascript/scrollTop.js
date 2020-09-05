@@ -26,9 +26,13 @@ window.onscroll = function() {
 
 function toTop() {
 
-		window.scroll({
-		  top: 0, 
-		  behavior: 'smooth'
-		});
+
+		// window.scroll({
+		//   top: 0, 
+		//   behavior: 'smooth'
+		// });
+
+		$(window).scrollTop(0);
+
 
 }
