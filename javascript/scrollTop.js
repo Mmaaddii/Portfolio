@@ -1,11 +1,6 @@
 
 
-
-
-
 var button = document.getElementById("scrollButton");
-
-
 
 
 // Hide Show Scroll Top Button Function
@@ -26,13 +21,10 @@ window.onscroll = function() {
 
 function toTop() {
 
-
 		window.scrollTo({
 		  top: 0, 
 		  behavior: 'smooth'
 		});
 
 		// $(window).scrollTop(0);
-
-
 }
