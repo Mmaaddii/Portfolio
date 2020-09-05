@@ -70,10 +70,9 @@
       ------------------------------->
 
       <section class="contact py-5">
-        <div class="container">
           <h2 class="mb-5 h1 text-center">Contact Me</h2>
 
-          <form name="contact" method="POST" netlify>
+          <form name="contact" data-netlify-recaptcha="true" method="POST" netlify>
             <div class="form-group">
               <label for="email">Email</label>
               <input class="form-control" type="text" name="email" placeholder="email" id="email">
@@ -82,10 +81,10 @@
               <label for="message">Message</label>
               <textarea class="form-control" type="text" name="message" placeholder="message" id="message"></textarea>
             </div>
+            <div data-netlify-recaptcha="true"></div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
 
-        </div>
       </section>
 
     <!-------------------------------
