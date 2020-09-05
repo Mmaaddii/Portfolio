@@ -75,11 +75,15 @@
           <form name="contact" data-netlify-recaptcha="true" method="POST" netlify>
             <div class="form-group">
               <label for="email">Email</label>
-              <input class="form-control" type="text" name="email" placeholder="email" id="email">
+              <input class="form-control" type="text" name="email" placeholder="name@domain.com" id="email">
+            </div>
+            <div class="form-group">
+              <label for="number">Numéro</label>
+              <input class="form-control" type="text" name="number" placeholder="0666554433" id="number">
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea class="form-control" type="text" name="message" placeholder="message" id="message"></textarea>
+              <textarea class="form-control" type="text" name="message" placeholder="Your Message Here" id="message"></textarea>
             </div>
             <div data-netlify-recaptcha="true"></div>
             <button type="submit" class="btn btn-primary mt-2">Submit</button>
