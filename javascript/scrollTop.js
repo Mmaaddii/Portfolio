@@ -27,12 +27,12 @@ window.onscroll = function() {
 function toTop() {
 
 
-		// window.scroll({
-		//   top: 0, 
-		//   behavior: 'smooth'
-		// });
+		window.scrollTo({
+		  top: 0, 
+		  behavior: 'smooth'
+		});
 
-		$(window).scrollTop(0);
+		// $(window).scrollTop(0);
 
 
 }
