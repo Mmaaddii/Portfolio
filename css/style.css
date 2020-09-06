@@ -33,12 +33,23 @@ h1,h2,h3,h4,h5 {
 	color: #777;
     background-color: rgba(234, 225, 162, .95);
     border-color: #777;
-
 }
 
-.navbar {
-	/*opacity: .8;*/
+.loadPage {
+	/*position: relative;*/
+	/*z-index: 9999!important;*/
+	/*background-color: red;*/
 }
+
+/*Start Navbar*/
+.dropdown-toggle::after {
+	display: none;
+}
+.navbar .social ion-icon {
+	font-size: 25px;
+}
+/*End Navbar*/
+
 
 .carousel-item {
 	height: 370px;

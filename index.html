@@ -30,8 +30,8 @@
     -------------------------------
     -------------------------------
     ------------------------------->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#"><img src="images/logo.png" style="width: 110px;"></a>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="width: 110px;"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,33 +39,43 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#"><ion-icon name="home-outline"></ion-icon> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.html"><ion-icon name="mail-outline"></ion-icon> Contact</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
+              <ion-icon name="chevron-down-outline"></ion-icon> 
+              Services
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Logo Design</a>
+              <a class="dropdown-item" href="#">Banner Design</a>
+              <a class="dropdown-item" href="#">Web Design</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Front-end Dev</a>
+              <a class="dropdown-item" href="#">Back-end Dev</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        </ul><!-- End Main Navigation -->
+        <!-- Start Social Media Nav Links -->
+
+        <hr class="d-block d-md-none bg-white">
+
+        <div class="my-2 my-lg-0 text-center social">
+          <h4 class="d-block d-md-none text-white">Social Media</h4>
+          <a href="whatsapp.html" class="text-success">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </a>
+          <a href="facebook.html" class="text-primary">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="twitter.html" class="text-info">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        <!-- </div> End Social Media -->
+
       </div>
     </nav>
 
