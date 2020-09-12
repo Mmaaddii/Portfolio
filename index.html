@@ -12,16 +12,23 @@
     <!-- Mine Files -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <!-- <script src="javascript/scrollTop.js" type="text/javascript"></script> -->
+    <script src="javascript/script.js" type="text/javascript"></script>
 
   </head>
   <body>
 
-    <!-- Scroll to top button -->
+    <!-- Start Spinner Border  -->
+      <div class="loadPage text-secondary" id="loader">
+        <div class="spinner-border"></div>
+      </div>
+    <!-- End Spinner Border -->
 
+    <!-- Scroll to top button -->
     <span class="scrollButton d-none" id="scrollButton" onclick="toTop()">
       <ion-icon name="chevron-up-outline"></ion-icon>
     </span>
     <!-- End Scroll To Top Button -->
+
 
   <!-------------------------------
     -------------------------------
@@ -39,7 +46,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"><ion-icon name="home-outline"></ion-icon> Home</a>
+            <a class="nav-link" href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html"><ion-icon name="mail-outline"></ion-icon> Contact</a>
@@ -50,12 +57,12 @@
               Services
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Logo Design</a>
-              <a class="dropdown-item" href="#">Banner Design</a>
-              <a class="dropdown-item" href="#">Web Design</a>
+              <a class="dropdown-item" href="service_ld.html">Logo Design</a>
+              <a class="dropdown-item" href="service_bd.html">Banner Design</a>
+              <a class="dropdown-item" href="service_wd.html">Web Design</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Front-end Dev</a>
-              <a class="dropdown-item" href="#">Back-end Dev</a>
+              <a class="dropdown-item" href="service_fed.html">Front-end Dev</a>
+              <a class="dropdown-item" href="service_bed.html">Back-end Dev</a>
             </div>
           </li>
         </ul><!-- End Main Navigation -->
@@ -250,12 +257,13 @@
         FOOTER
       </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- JavaScript Frameworks -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-    <script src="javascript/scrollTop.js" type="text/javascript"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    
+    <!-- My Scripts -->
   </body>
 </html>

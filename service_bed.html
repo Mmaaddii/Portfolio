@@ -4,14 +4,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Back End Developpement</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- My style .css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- End My Style .css -->
 
-    <title>Contactez Moi</title>
+    <!-- Mine Files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- <script src="javascript/scrollTop.js" type="text/javascript"></script> -->
+    <script src="javascript/script.js" type="text/javascript"></script>
+
   </head>
   <body>
 
@@ -20,6 +22,13 @@
         <div class="spinner-border"></div>
       </div>
     <!-- End Spinner Border -->
+
+    <!-- Scroll to top button -->
+    <span class="scrollButton d-none" id="scrollButton" onclick="toTop()">
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </span>
+    <!-- End Scroll To Top Button -->
+
 
   <!-------------------------------
     -------------------------------
@@ -40,9 +49,9 @@
             <a class="nav-link" href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="contact.html"><ion-icon name="mail-outline"></ion-icon> Contact</a>
+            <a class="nav-link" href="contact.html"><ion-icon name="mail-outline"></ion-icon> Contact</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <ion-icon name="chevron-down-outline"></ion-icon> 
               Services
@@ -53,7 +62,7 @@
               <a class="dropdown-item" href="service_wd.html">Web Design</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="service_fed.html">Front-end Dev</a>
-              <a class="dropdown-item" href="service_bed.html">Back-end Dev</a>
+              <a class="dropdown-item active" href="service_bed.html">Back-end Dev</a>
             </div>
           </li>
         </ul><!-- End Main Navigation -->
@@ -76,39 +85,24 @@
 
       </div>
     </nav>
+    <!-- End Navbar -->
 
     <!-------------------------------
       -------------------------------
       -------------------------------
-            START CONTACT ME
+            Banner Design Section
       -------------------------------
       -------------------------------
       ------------------------------->
 
-      <section class="contact py-5">
-          <div class="container">
-            <h2 class="mb-5 h1 text-center">Contact Me</h2>
+      <div class="banner-design">
+        <div class="container">
+          <h1 class="py-5 text-center">Back End Developpement</h1>
+          
+        </div>
+      </div>
 
-            <form name="contact" data-netlify-recaptcha="true" method="POST" netlify>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input class="form-control" type="text" name="email" placeholder="name@domain.com" id="email">
-              </div>
-              <div class="form-group">
-                <label for="number">Numéro</label>
-                <input class="form-control" type="text" name="number" placeholder="0666554433" id="number">
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" type="text" name="message" placeholder="Your Message Here" id="message"></textarea>
-              </div>
-              <div data-netlify-recaptcha="true"></div>
-              <button type="submit" class="btn btn-primary mt-2">Submit</button>
-            </form>
-          </div> <!-- End Container -->
-
-      </section>
-      <!-- End Contact Me -->
+      <!-- End Banner Design Section -->
 
     <!-------------------------------
       -------------------------------
@@ -121,12 +115,13 @@
         FOOTER
       </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- JavaScript Frameworks -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-    <script src="javascript/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    
+    <!-- My Scripts -->
   </body>
 </html>
