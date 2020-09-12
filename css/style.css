@@ -90,3 +90,11 @@ h1,h2,h3,h4,h5 {
 }
 
 /*End Contact Form*/
+
+/*Start Logo Design Page*/
+.logo-design .text-muted {
+	font-size: .85rem;
+	color: #a29e9e!important;
+	letter-spacing: 4px;
+}
+/*End Logo Design Page*/
