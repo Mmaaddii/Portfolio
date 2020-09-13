@@ -5,6 +5,7 @@ body {
 	/*color: red;*/
 	padding-top: 72px;
 	/*height: 2300px;*/
+	overflow: hidden;
 	position: relative;
 	scroll-behavior: smouth;
 }
