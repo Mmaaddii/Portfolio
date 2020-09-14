@@ -64,12 +64,15 @@ h1,h2,h3,h4,h5 {
 	display: none;
 }
 
+.navbar .social a:hover {
+	text-decoration: none;
+}
+
 .navbar .social ion-icon {
 	font-size: 25px;
 }
 
 /*End Navbar*/
-
 
 /*Start Carousel*/
 
