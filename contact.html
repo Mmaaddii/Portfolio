@@ -21,13 +21,14 @@
       </div>
     <!-- End Spinner Border -->
 
-  <!-------------------------------
-    -------------------------------
-    -------------------------------
-          START NAVBAR
-    -------------------------------
-    -------------------------------
-    ------------------------------->
+    <!-- Start Scroll Top Button -->
+
+    <span class="scrollButton d-none" id="scrollButton" onclick="toTop()">
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </span>
+
+    <!-- Start Navbar -->
+
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="width: 110px;"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +57,8 @@
               <a class="dropdown-item" href="service_bed.html">Back-end Dev</a>
             </div>
           </li>
-        </ul><!-- End Main Navigation -->
+        </ul>
+
         <!-- Start Social Media Nav Links -->
 
         <hr class="d-block d-md-none bg-white">
@@ -72,61 +74,66 @@
           <a href="twitter.html" class="text-info">
             <ion-icon name="logo-twitter"></ion-icon>
           </a>
-        <!-- </div> End Social Media -->
+        </div> 
+
+        <!-- End Social Media -->
 
       </div>
     </nav>
 
-    <!-------------------------------
-      -------------------------------
-      -------------------------------
-            START CONTACT ME
-      -------------------------------
-      -------------------------------
-      ------------------------------->
+    <!-- End Navbar -->
 
-      <section class="contact py-5">
-          <div class="container">
-            <h2 class="mb-5 h1 text-center">Contact Me</h2>
+    <!-- Start Contact Me -->
 
-            <form name="contact" data-netlify-recaptcha="true" method="POST" netlify>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input class="form-control" type="text" name="email" placeholder="name@domain.com" id="email">
-              </div>
-              <div class="form-group">
-                <label for="number">Numéro</label>
-                <input class="form-control" type="text" name="number" placeholder="0666554433" id="number">
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" type="text" name="message" placeholder="Your Message Here" id="message"></textarea>
-              </div>
-              <div data-netlify-recaptcha="true"></div>
-              <button type="submit" class="btn btn-primary mt-2">Submit</button>
-            </form>
-          </div> <!-- End Container -->
+      <section class="bg-light">
+         
+         <div class="contact py-5">
+           <div class="container">
+             <h2 class="mb-5 h1 text-secondary text-center">Contactez Nous</h2>
+
+             <form name="contact" data-netlify-recaptcha="true" method="POST" netlify>
+               <div class="form-group">
+                 <label for="name">Votre Nom</label>
+                 <input class="form-control" type="text" id="name" name="name" placeholder="Entrez Votre Nom" id="name" required>
+               </div>
+               <div class="form-group">
+                 <label for="email">Votre Email</label>
+                 <input class="form-control" type="email" id="email" name="email" placeholder="name@domain.com" id="email" required>
+               </div>
+               <div class="form-group">
+                 <label for="number">Votre Numéro</label>
+                 <input class="form-control" type="text" name="number" placeholder="0666554433" id="number" required>
+               </div>
+               <div class="form-group">
+                 <label for="message">Votre Message</label>
+                 <textarea rows="7" class="form-control" type="text" name="message" placeholder="Your Message Here" id="message" required></textarea>
+               </div>
+               <div data-netlify-recaptcha="true"></div>
+               <button type="submit" class="btn btn-primary mt-2 d-block w-100 btn-lg">Envoyez <ion-icon name="send" class="ml-2"></ion-icon></button>
+             </form>
+           </div> <!-- End Container -->
+         </div>
 
       </section>
-      <!-- End Contact Me -->
 
-    <!-------------------------------
-      -------------------------------
-      -------------------------------
-            START FOOTER
-      -------------------------------
-      -------------------------------
-      ------------------------------->
+    <!-- End Contact Me -->
+
+    <!-- Start Footer -->
+
       <footer class="py-5 bg-dark text-light text-center">
         FOOTER
       </footer>
+
+    <!-- End Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-    <script src="javascript/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    <script src="javascript/script.js" type="text/javascript"></script>
+    <script src="javascript/validate.js"></script>
   </body>
 </html>

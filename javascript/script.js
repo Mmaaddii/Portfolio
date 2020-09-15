@@ -27,7 +27,7 @@
 
 window.addEventListener("load", function() {
 	const loader = document.querySelector('#loader');
-	console.log(loader);
+	// console.log(loader);
 	loader.classList.add("d-none");
 	document.body.style.overflow = "scroll";
 });
