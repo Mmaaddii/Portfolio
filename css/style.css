@@ -19,10 +19,10 @@ h1,h2,h3,h4,h5 {
 /*Scroll Button*/
 
 .scrollButton {
-	color: #999;
+	color: #f1f1f1;
     border: 1px solid #999;
     font-size: 1.2rem;
-    background-color: rgba(234, 225, 162, .75);
+    background-color: #7ac943;
     transition: all ease-out .15s;
     border-radius: 4px;
     position: fixed;
@@ -34,9 +34,9 @@ h1,h2,h3,h4,h5 {
 }
 
 .scrollButton:hover {
-	color: #777;
-    background-color: rgba(234, 225, 162, .95);
-    border-color: #777;
+	color: #343a40;
+	opacity: .9;
+    border-color: #343a40;
 }
 
 /*Loader Spinner */
