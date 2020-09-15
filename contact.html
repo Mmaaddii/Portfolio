@@ -30,7 +30,7 @@
 
     <!-- Start Navbar -->
 
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light shadow-sm">
       <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,6 +40,9 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"><ion-icon name="finger-print-outline"></ion-icon> About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="contact.html"><ion-icon name="mail-outline"></ion-icon> Contact</a>
@@ -94,20 +97,16 @@
 
              <form name="contact" data-netlify-recaptcha="true" method="POST" netlify>
                <div class="form-group">
-                 <label for="name">Votre Nom</label>
-                 <input class="form-control" type="text" id="name" name="name" placeholder="Entrez Votre Nom" id="name" required>
+                 <input class="form-control form-control-lg" type="text" id="name" name="name" placeholder="Nom" id="name" required>
                </div>
                <div class="form-group">
-                 <label for="email">Votre Email</label>
-                 <input class="form-control" type="email" id="email" name="email" placeholder="name@domain.com" id="email" required>
+                 <input class="form-control form-control-lg" type="email" id="email" name="email" placeholder="Email" id="email" required>
                </div>
                <div class="form-group">
-                 <label for="number">Votre Numéro</label>
-                 <input class="form-control" type="text" name="number" placeholder="0666554433" id="number" required>
+                 <input class="form-control form-control-lg" type="text" name="number" placeholder="Numéro de téléphone" id="number" required>
                </div>
                <div class="form-group">
-                 <label for="message">Votre Message</label>
-                 <textarea rows="7" class="form-control" type="text" name="message" placeholder="Your Message Here" id="message" required></textarea>
+                 <textarea rows="4" class="form-control form-control-lg" type="text" name="message" placeholder="Message" id="message" required></textarea>
                </div>
                <div data-netlify-recaptcha="true"></div>
                <button type="submit" class="btn btn-primary mt-2 d-block w-100 btn-lg">Envoyez <ion-icon name="send-sharp" class="ml-2 rotate"></ion-icon></button>
